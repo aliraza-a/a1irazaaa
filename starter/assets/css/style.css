@@ -1,0 +1,70 @@
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ROOT VARIABLES */
+:root {
+  --var-main-font: "Montserrat";
+  --var-black-color: #333;
+  --var-white-color: #fff;
+  --var-primary-color: #003566;
+  --var-accent-color: #ffd60a;
+}
+
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--var-main-font), sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--var-black-color);
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+a,
+button {
+  text-decoration: none !important;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.theme-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: var(--var-white-color);
+
+  background: var(--var-primary-color);
+  border: 0;
+  border-radius: 5px;
+
+  align-items: center;
+  padding: 1.2rem 3.6rem;
+}
+
+.theme-btn:hover {
+  background: var(--var-accent-color);
+  color: var(--var-black-color);
+}
